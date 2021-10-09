@@ -21,7 +21,7 @@ def url2host(url):
 
 if __name__ == '__main__':
     dns.resolver.default_resolver = dnsresolver.get_resolver('8.8.8.8')
-    host = url2host("https://lol.vulcan.io/")
+    host = url2host("https://dordali.xyz/")
     print("[-] Enumrating subdomains for host %s" % host)
     domains = set()
     domains = enumrate.enumrate_subdomains(host)
